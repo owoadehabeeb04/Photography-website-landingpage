@@ -196,8 +196,7 @@ html {
   margin-left: 5rem;
 }
 .backimage {
-  background-image: url(/bodyimages/BG\ Blur.svg);
-  background-image: url(/bodyimages/BG\ line.svg);
+  background-image: url(bodyimages/BG\ Blur.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position: center;
@@ -694,7 +693,7 @@ html {
   padding: 0.5rem 0rem;
 
   color: #212121;
-  list-style-image: url(/bodyimages/check-circle.svg);
+  list-style-image: url(bodyimages/check-circle.svg);
 }
 .headprices ul {
   margin-top: 2rem;
@@ -705,7 +704,7 @@ html {
   padding-right: 5rem;
   padding-left: 2rem;
   padding-top: 1rem;
-  background-image: url(/bodyimages/backgrounddd.svg);
+  background-image: url(bodyimages/backgrounddd.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position: top;
@@ -941,7 +940,7 @@ html {
 }
 
 .backgroundimage {
-  background-image: url(/footerimages/Background.svg);
+  background-image: url(footerimages/Background.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
