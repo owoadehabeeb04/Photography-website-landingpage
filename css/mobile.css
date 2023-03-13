@@ -1,5 +1,10 @@
 
 @media (max-width: 1300px) {
+  .testimonialssection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
      .about {
       display: flex;
       flex-direction: column;
@@ -161,6 +166,11 @@
           z-index: 10;
           position: fixed;
           
+      }
+      .testimonialssection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
       }
     }
     @media only screen and (max-width: 1000px)  {
@@ -673,6 +683,7 @@
   }
   .midfooter a {
     font-size: 1rem;
+    padding-top: 1rem;
   }
   .socials {
     display: flex;
@@ -717,6 +728,7 @@ margin-top: 0.34rem;
 .midfooter a {
   padding:  2rem;
   padding-left: 0rem;
+  padding-bottom: 0.5rem;
 }
 .head h1 {
   font-family: 'Poppins';

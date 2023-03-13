@@ -15,11 +15,10 @@ const clikckk = button.addEventListener ('click', function validate() {
     const mail = document.getElementById('email').value;
     const validateEmail = (email) => {
         return email.match(
-          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
       };
 
-if (validateEmail) {
+if (validateEmail(mail)) {
     success.style.display = 'inline-flex';
     backoverlay.style.display = 'inline-flex';
     closesuccess.addEventListener('click', function(){
@@ -43,7 +42,8 @@ else {
         backoverlay.style.display = 'none';
     })
 }
+
 })
+console.log(validateEmail(mail));
 // )
 
-console.log(clikckk)

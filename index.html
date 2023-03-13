@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="./css/style2.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+      
   </head>
   <body>
     <div class="BIGCONTAINER">
-      <header class="top-nav">
+      <header class="top-nav" data-aos="fade-in">
         <div class="logo">
           <div class="img">
             <img src="./header images/logo.svg" alt="the daniel" />
@@ -29,12 +32,12 @@
           <div class="menu-button"></div>
         </label>
         <ul class="menu">
-          <li class="list" style="margin-right: 10px"><a href="./">Home</a></li>
-          <li class="list"><a href="./">About</a></li>
-          <li class="list"><a href="./">Services</a></li>
-          <li class="list"><a href="./">Portfolio</a></li>
-          <li class="list"><a href="./">Pricing</a></li>
-          <li class="list"><a href="./">Contact</a></li>
+          <li class="list" style="margin-right: 10px"><a href="#home">Home</a></li>
+          <li class="list"><a href="#about">About</a></li>
+          <li class="list"><a href="#services">Services</a></li>
+          <li class="list"><a href="#portfolio">Portfolio</a></li>
+          <li class="list"><a href="#prices">Pricing</a></li>
+          <li class="list"><a href="#contact">Contact</a></li>
           <li class="book"><a href="./">Book us now</a></li>
         </ul>
         <!-- 
@@ -43,7 +46,7 @@
           <button>Book us now</button>
         </div>
       </header>
-      <section class="about">
+      <section class="about" id="home">
         <div class="bookus" data-aos="fade-right">
           <div class="backimage">
             <h1>Capture the Special moments</h1>
@@ -60,7 +63,7 @@
           </div>
         </div>
       </section>
-      <figcaption class="about2" data-aos="fade-in">
+      <figcaption class="about2" data-aos="fade-in" id="about">
         <h1 class="idoko">ABOUT ME</h1>
       </figcaption>
       <div class="about3">
@@ -85,7 +88,7 @@
           </p>
         </div>
       </div>
-      <main class="services"  data-aos="fade-in">
+      <main class="services"  data-aos="fade-in" id="services">
         <h1>Our services</h1>
       </main>
       <main class="remainingservices">
@@ -184,7 +187,7 @@
           </div>
         </div>
       </main>
-      <div class="subsection"  data-aos="fade-in">
+      <div class="subsection"  data-aos="fade-in" id="portfolio">
         <img src="./bodyimages/Portfolio.svg" alt="Portfolio" />
       </div>
       <div class="jobs"  data-aos="fade-out">
@@ -217,7 +220,7 @@
           >View Full Portfolio <img src="/bodyimages/Vector.svg" alt=""
         /></a>
       </div>
-      <div class="prices">
+      <div class="prices" id="prices">
         <h1>Our Pricing</h1>
       </div>
       <div class="headprices">
@@ -271,7 +274,7 @@
             recommend.
           </p>
           <!-- <img src="/footer images/Frame 6840 (1).svg" alt="sliding"> -->
-          <div class="imagestestname">
+          <div class="imagestestname" >
             <img src="/footerimages/Rectangle 59 (1).svg" alt="swipe" />
             <img src="/footerimages/Ellipse 89.svg " alt="swipe" />
             <img src="/footerimages/Ellipse 90.svg " alt="swipe" />
@@ -285,12 +288,12 @@
       </div>
       <div class="imgfooter" data-aos = "slide-right"
       >
-        <img src="/footerimages/Dot.svg" alt="dots" />
-        <img src="/footerimages/Dot.svg" alt="dots" />
-        <img src="/footerimages/Dot.svg" alt="dots" />
-        <img src="/footerimages/Dot.svg" alt="dots" />
+        <img loading="lazy" src="/footerimages/Dot.svg" alt="dots" />
+        <img loading="lazy" src="/footerimages/Dot.svg" alt="dots" />
+        <img loading="lazy" src="/footerimages/Dot.svg" alt="dots" />
+        <img loading="lazy "  src="/footerimages/Dot.svg" alt="dots" />
       </div>
-      <div class="closefooter" data-aos="flip-up">
+      <div class="closefooter" data-aos="flip-up" >
         <div class="head">
           <div class="headbackgrond">
             <div class="backgroundimage">
@@ -323,7 +326,7 @@
             src="/footer images/Rectangle 33.svg"
             alt="circle"
           />
-          <img
+          <imggit 
             class="backcircle5"
             src="/footer images/Rectangle 34.svg"
             alt="circle"
@@ -341,13 +344,13 @@
         </div>
       </div>
     </div>
-    <div class="footer" data-aos="zoom-in">
+    <div class="footer" data-aos="zoom-in" id="contact">
       <div class="headfooter">
         <div class="footer1">
           <div class="subfooter1">
             <div class="logo">
               <div class="img">
-                <img src="./header images/logo.svg" alt="the daniel" />
+                <img loading="lazy" src="/header images/logo.svg" alt="the daniel" />
               </div>
               <div class="title">
                 The <br />
@@ -367,7 +370,7 @@
                 />
 
                 <button class="arrow">
-                  <img src="/footerimages/ArrowRight.svg" alt="arrow" />
+                  <img loading="lazy" src="/footerimages/ArrowRight.svg" alt="arrow" />
                 </button>
               </div>
             </div>
@@ -402,17 +405,17 @@
             <p>Follow Us</p>
           </div>
           <div>
-            <a href="https://www.linkedin.com/feed/">
-              <img src="./footerimages/Linkedin.svg" alt=""
+            <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin">
+              <img loading="lazy"  src="./footerimages/Linkedin.svg" alt=""
             /></a>
             <a href="https://www.instagram.com/"
-              ><img src="./footerimages/IG.svg" alt=""
+              ><img src="/footerimages/IG.svg" alt=""
             /></a>
             <a href="https://twitter.com/home"
-              ><img src="./footerimages/twitter.svg" alt=""
+              ><img src="/footerimages/twitter.svg" alt=""
             /></a>
             <a href="https://web.facebook.com/">
-              <img src="./footerimages/fb.svg" alt=""
+              <img src="/footerimages/fb.svg" alt=""
             /></a>
           </div>
         </div>
