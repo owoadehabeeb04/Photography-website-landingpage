@@ -1214,3 +1214,931 @@ height: 76.76px;
   text-align: center;
 }
 
+
+
+/* Animations */
+.menu .list a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu .list a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid #6c57db;
+  transition: width 0.3s;
+}
+
+.menu .list a:hover::after {
+  width: 90%;
+}
+.explore img:hover {
+  animation: rotate 0.3s ease-in-out 0.1s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.explore a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid;
+  transition: width 0.3s;
+}
+.explore a:hover::after {
+  width: 100%;
+}
+
+.form button img:hover {
+  animation: rotate 0.3s ease-in-out 0.1s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.success {
+  width: 50%;
+
+  padding: 6rem;
+}
+.close-success {
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.success p {
+  padding: 0rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+  position: fixed;
+  display: none;
+}
+
+/* mobile view */
+
+
+@media (max-width: 1300px) {
+  .testimonialssection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+     .about {
+      display: flex;
+      flex-direction: column;
+    }
+      .bookus h1 {
+      text-align: center;
+      
+      padding-right: 0rem;
+      }
+      .imgbookus2 img{
+        width: 100%;
+      }
+      .imgbookus2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .bookus h1 {
+        font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6rem;
+      line-height: 120px;
+      padding-right: 1rem;
+      color: #1A093C;
+      }
+      .bookus p {
+        text-align: center;
+        color: rgba(26, 9, 60, 0.8);
+      }
+      .bookus button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        color: white;
+        background: linear-gradient(270.04deg, rgba(108, 87, 219, 0.87) 0.05%, rgba(12, 25, 31, 0.79) 97.84%), #00B8D9;
+        border: 2px solid white;
+      }
+      .bookus img {
+        display: none;
+      }
+      .imgbookus2{
+        margin: 0 auto;
+       padding-top: 2em;
+      }
+      .aboutdaniel {
+        padding: 1rem;
+      }
+         .img {
+            display: flex;
+            justify-content: center;
+         }
+         .about3 .img img {
+            width: 100%;
+         } 
+        .about3 {
+            display: flex;
+            flex-direction: column-reverse;
+             flex-wrap: wrap; 
+            justify-content: center;
+            align-items:
+            center ;
+        }
+        .aboutdaniel {
+            text-align: center;
+        }
+        .about2 {
+          display: flex;
+          justify-content: center;
+          margin-right: 0em;
+        }
+        .remainingservices {
+          background-image: none;
+          background-repeat: no-repeat;
+          background-position: right;
+        width: 100%;
+        
+        }
+        .services1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 1rem 1rem;
+          padding-left: 3rem;
+          width: 100%;
+        background: #E6EFFF;
+        border-radius: 16px;
+        margin: 0 auto;
+        }
+        .services2 {
+          width: 100%;
+        }
+        .services3 {
+          width: 100%;
+        }
+        .services4 {
+          width: 100%;
+        }
+        .services5 {
+          width: 100%;
+        }
+        .aside2 {
+          padding: 2rem 0rem;
+          padding-left: 2rem;
+          padding-right: 8rem;
+          
+        }
+        .headprices {
+          display: flex;
+          flex-direction: row;
+           flex-wrap: wrap; 
+          justify-content: space-evenly;
+          margin: 0rem  0rem;
+        
+        }
+        .prices1 {
+          margin: 1rem;
+        }
+        .prices2 {
+          margin: 1rem
+        }
+        .prices3 {
+          margin: 1rem;
+        }
+        .success {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          background-color:  #FFEFE6;
+          padding: 6rem;
+          border-radius: 5px;
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+          z-index: 10;
+          position: fixed;
+          
+      }
+        .failure {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          background-color:  #FFEFE6;
+          padding: 6rem;
+          border-radius: 5px;
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+          z-index: 10;
+          position: fixed;
+          
+      }
+      .testimonialssection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+    @media only screen and (max-width: 1000px)  {
+      .testimonialssection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .backgroundimage {
+        padding: 2rem 0rem;
+        margin: 2rem 0rem;
+      }
+
+    }
+    @media only screen and (max-width: 800px) {
+      .backgroundimage {
+        padding: 0rem 0rem;
+        margin: 1rem 0rem;
+      }
+    }
+    @media only screen and (min-width: 700px) {
+
+    .dot {
+      display: none;
+    }
+  
+    }
+    @media (max-width: 1015px) {
+      .aside3 {
+        padding: 0.5rem;
+        text-align: center;
+     
+      }
+      .aside2 {
+        padding: 0.5rem;
+        text-align: center;
+     
+      }
+      .aside1 {
+        padding: 0.5rem;
+        text-align: center;
+     
+      }
+      .aside4 {
+        padding: 0.5rem;
+        text-align: center;
+     
+      }
+      .aside5  {
+        padding: 0.5rem;
+        text-align: center;
+     
+      }
+    }
+    @media (max-width: 800px) {
+      .top-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+      }
+      .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+      z-index: 1;
+    }
+      .menu-button-container {
+        display: flex;
+      }
+      .top-nav {
+        padding-top:    40px;
+      
+      }
+      .logo {
+        z-index: 1;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+      }
+      #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle:checked ~ .menu li {
+        border: 1px solid white;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        padding: 0.5em 0;
+        width: 100%;
+        height: 100%;
+        color:  #505050;
+        ;
+        background-color: white;
+      }
+      .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+      }
+      .button button {
+        display: none;
+         z-index: 0;
+      }
+      .top-nav .button {
+        display: none;
+      }
+      .book a {
+       text-decoration: none;
+       background-color: linear-gradient(270.04deg, rgba(108, 87, 219, 0.87) 0.05%, rgba(12, 25, 31, 0.79) 97.84%),;
+      }
+  
+      .success {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        background-color:  #FFEFE6;
+        padding: 6rem;
+        border-radius: 5px;
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        position: fixed;
+        
+    }
+      .failure {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        background-color:  #FFEFE6;
+        padding: 6rem;
+        border-radius: 5px;
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        position: fixed;
+        
+    }
+      }
+       
+
+
+      @media (max-width: 700px)  {
+        .testimage {
+          width: 100%;
+        }
+        .testimage img {
+          width: 100%;
+        }
+        .backgroundimage {
+          padding: 0rem 0rem;
+          margin: 1rem 0rem;
+          
+        }
+        .backgroundimage button {
+          margin: 1rem;
+        }
+  
+        .danieljobs h1 {
+          font-size: 1rem;
+          line-height: 20px;
+        }
+        .danieljobs a {
+        font-size: 12px;
+        line-height: 15px;
+        }
+        .services5 {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        .aside5 {
+          padding: 1rem;
+          text-align: center;
+        }
+        .services5 .imageserv {
+          width: 80%;
+        }
+        .services5 .imageserv img {
+          width: 100%;
+        }
+        
+        .services5 {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        .aside5 {
+          padding: 1rem;
+          text-align: center;
+        }
+        .services5 .imageserv {
+          width: 80%;
+        }
+        .services5 .imageserv img {
+          width: 100%;
+        }
+        
+        .services4 {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        .aside4 {
+          padding: 1rem;
+          text-align: center;
+        }
+        .services4 .imageserv {
+          width: 80%;
+        }
+        .services4 .imageserv img {
+          width: 100%;
+        }
+        
+        .services3 {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        .aside3 {
+          padding: 1rem;
+          text-align: center;
+        }
+        .services3 .imageserv {
+          width: 80%;
+        }
+        .services3 .imageserv img {
+          width: 100%;
+        }
+        
+        .services2 {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        .aside2 {
+          padding: 1rem;
+          text-align: center;
+        }
+        .services2 .imageserv {
+          width: 80%;
+        }
+        .services2 .imageserv img {
+          width: 100%;
+        }
+        
+        .services1 {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        .aside1 {
+          padding: 1rem;
+          text-align: center;
+        }
+        .services1 .imageserv {
+          width: 80%;
+        }
+        .services1 .imageserv img {
+          width: 100%;
+        }
+        .fullportfolio {
+          padding: 0rem;
+          font-size: 1rem;
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 1rem;
+        }
+        .fullportfolio a {
+          font-size: 1rem;
+        }
+        .fullportfolio a:hover {
+          transition: font-size 0.3s ease-in;
+          font-size: 1rem;
+        }
+        .fullportfolio a img {
+         width: 15px; 
+        }
+        .fullportfolio a img:hover {
+          animation: rotate 0.3s ease-in-out 0.1s;
+      
+        }
+        @keyframes rotate { 
+          0% {
+              transform: rotate(0deg);
+          }
+          100%{
+              transform: rotate(0deg);
+          }
+          
+        }
+        .imgfooter {
+          display: none;
+          padding: 0rem;
+        }
+        .testimonialname h1 {
+          font-size: 23px;
+          padding: 0rem;
+          text-align: center;
+        }
+        .testimonialname p {
+          font-size: 20px   ;
+          text-align: center;
+        }
+        .imagestestname {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5rem;
+        }
+        .imagestestname img {
+          margin: 0.1rem;
+        }
+        .testimonialssection {
+          padding: 0rem;
+        }
+        .testimonialimage {
+          width: 100%;
+        }
+        .testimonialimage img {
+          width: 100%;
+        }
+        .success {
+        
+          width: 80%;
+          padding: 3rem;
+
+          position: fixed;
+          
+      }
+        .failure {
+        
+          width: 80%;
+          padding: 3rem;
+
+          position: fixed;
+          
+      }
+      .success p {
+        text-align: center;
+      }
+      .success h1 {
+        font-size: 1.3rem;
+      }
+      .failure p {
+        text-align: center;
+      }
+      .failure h1 {
+        font-size: 1.3rem;
+      }
+      .close-success {
+        position: absolute;
+        top: 0rem;
+        right: 2rem;
+        font-size: 3rem;
+        color: #333;
+        cursor: pointer;
+        border: none;
+        background: none;   
+        
+}
+      .close-failure {
+        position: absolute;
+        top: 0rem;
+        right: 2rem;
+        font-size: 3rem;
+        color: #333;
+        cursor: pointer;
+        border: none;
+        background: none;   
+        
+}
+
+      }
+      @media (max-width: 820px)  {
+        .prices1 {
+          width: 100%;
+        }
+        .prices2 {
+          width: 100%;
+        }
+        .prices3 {
+          width: 100%;
+        }
+      }
+      @media (max-width: 550px)  {
+.backimage h1{
+  font-size: 4rem;
+  line-height: 80px;
+}
+.backimage p {
+  font-size: 25px;
+}
+.aboutdaniel p {
+  font-size: 16px;
+}
+.about3 {
+  padding-top: 0rem;
+}
+.about2 h1 {
+  margin-top: 1rem;
+}
+.imgbookus2 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+      }
+  @media (max-width: 480px)  {
+    .prices1 {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: 0rem;
+    }
+    .prices2 {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: 0rem;
+      margin-top: 1rem;
+    }
+    .prices3 {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: 0rem;
+      margin-top: 1rem;
+    }
+    .about2 h1 {
+      font-size: 35px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      text-decoration: dashed;
+      border-bottom: none;
+    }
+    .headprices ul li {
+      /* Body */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 25px */
+    padding: 0.5rem 0rem;
+    
+    color: #212121;
+    list-style-image: url(/bodyimages/check-circle.svg);
+    }
+    
+    .testimonialssection {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .danieljobs {
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0rem  0rem;
+      flex-wrap: wrap;
+    
+   } 
+   .danieljobs h1 {
+    font-size: 1.3rem;
+    line-height: 24px;
+  }
+  .danieljobs a {
+  font-size: 16px;
+  line-height: 19px;
+  }
+  .testimonialname h1 {
+    font-size: 20px;
+    padding: 0rem;
+    text-align: left;
+  }
+  .testimonialname p {
+    font-size: 14px   ;
+    text-align: left;
+  }
+  .midfooter {
+    display: flex;
+    flex-direction: row;
+  }
+  .midfooter a {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  input[type=Email]{
+    background: #FFEFE6;
+  /* Black/Black 80% */
+  width: 21rem;
+  
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(10, 15, 13, 0.8);
+  border-radius: 10px;
+  
+  }
+  .backgroundimage {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+.form button {
+  background-color: #000000;
+  padding: 0.5rem 0.5rem;
+  background: #0A0F0D;
+border-radius: 10px;
+position: absolute;
+left: 20rem;
+margin-top: 0.34rem;
+}
+.midfooter .dotfooter {
+  display: none;
+}
+.midfooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.midfooter a {
+  padding:  2rem;
+  padding-left: 0rem;
+  padding-bottom: 0.5rem;
+}
+.head h1 {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 120%;
+/* or 58px */
+padding: 0rem 0rem;
+text-align: center;
+
+color: #212121;
+}
+.headh1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgbookus2 {
+  padding: 0rem;
+  margin-top: 1.5rem;
+}
+
+  }
+
+  
+
+
+  @media (max-width: 390px)  {
+    .headh1 {
+      margin-right: 1rem;
+      padding-inline-start: 1rem;
+    }
+  input[type=Email]{
+    background: #FFEFE6;
+  /* Black/Black 80% */
+  width: 15.7rem;
+
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(10, 15, 13, 0.8);
+  border-radius: 10px;
+  
+  }
+  
+.form button {
+  background-color: #000000;
+  padding: 0.5rem 0.5rem;
+  background: #0A0F0D;
+border-radius: 10px;
+position: absolute;
+left: 14.5rem;
+margin-top: 0.34rem;
+}
+  } 
+  @media (max-width: 325px)  {
+    .backimage h1{
+      font-size: 2rem;
+      line-height: 40px;
+    }
+    .backimage p {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+  @media (max-width: 300px)  {
+    
+  input[type=Email]{
+    background: #FFEFE6;
+  /* Black/Black 80% */
+  width: 13.5rem;
+  padding-right: 3em;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(10, 15, 13, 0.8);
+  border-radius: 10px;
+  
+  }
+  
+.form button {
+  background-color: #000000;
+  padding: 0.5rem 0.5rem;
+  background: #0A0F0D;
+border-radius: 10px;
+position: absolute;
+left: 12.5rem;
+margin-top: 0.34rem;
+}
+.backimage h1{
+  font-size: 2rem;
+  line-height: 40px;
+}
+.backimage p {
+  font-size: 25px;
+  line-height: 30px;
+}
+  } 
+
+  
+  .success {
+    display: none;
+  }
+  
+  .failure {
+    display: none;
+  }
