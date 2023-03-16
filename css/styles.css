@@ -263,6 +263,12 @@ html {
 .aboutdaniel {
   padding: 5rem;
 }
+.imageserv {
+  width: 100%;
+}
+.imageserv img {
+  width: 100%;
+}
 .services h1 {
   font-family: "Poppins";
   font-style: normal;
@@ -847,9 +853,20 @@ html {
 
   color: #213d39;
 }
+.testimonialimage {
+  width: 50rem;
+}
 
 .testimonialimage img {
   border-radius: 500px 0px 500px 500px;
+  width: 100%;
+
+}
+.testimage {
+  width: 50rem;
+}
+.testimage img {
+  width: 100%;
 }
 
 .testimonialname h1 {
@@ -940,7 +957,7 @@ html {
 }
 
 .backgroundimage {
-  background-image: url(footerimages/Background.svg);
+background-image: url(/footerimages/Background.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1502,7 +1519,7 @@ height: 76.76px;
     }
   
     }
-    @media (max-width: 1015px) {
+    @media (max-width: 1050px) {
       .aside3 {
         padding: 0.5rem;
         text-align: center;
@@ -1679,7 +1696,7 @@ height: 76.76px;
         .services5 .imageserv img {
           width: 100%;
         }
-        
+      
         .services5 {
           display: flex;
           flex-wrap: wrap;
