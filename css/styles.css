@@ -707,13 +707,14 @@ html {
 .prices1 {
   background: #e6efff;
   border-radius: 16px;
-  padding-right: 5rem;
+  padding-right: 4rem;
   padding-left: 2rem;
   padding-top: 1rem;
   background-image: url(bodyimages/backgrounddd.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position: top;
+  margin: 0rem 0.2rem;
 }
 .prices2 p {
   /* Header/3 Bold */
@@ -742,13 +743,14 @@ html {
 .prices2 {
   background: #ffefe6;
   border-radius: 16px;
-  padding-right: 5rem;
+  padding-right: 4rem;
   padding-left: 2rem;
   padding-top: 1rem;
   /* background-image: url(/bodyimages/Background.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position: top; */
+  margin: 0rem 0.2rem;
 }
 /*  */
 .prices3 p {
@@ -778,13 +780,14 @@ html {
 .prices3 {
   background: #e5faed;
   border-radius: 16px;
-  padding-right: 5rem;
+  padding-right: 4rem;
   padding-left: 2rem;
   padding-top: 1rem;
   /* background-image: url(/bodyimages/backgrounddd.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-position: top; */
+    margin-left: 0.2rem;
 }
 .headprices {
   display: flex;
@@ -1095,6 +1098,14 @@ height: 76.76px;
   text-align: center;
   /* Black/Black 80% */
   color: rgba(10, 15, 13, 0.8);
+}
+.copywright a {
+  text-decoration: none;
+  color: #000000;
+  transition: font-size 0.2s;
+}
+.copywright a:hover {
+  font-size: 20px;
 }
 .headfooter {
   background-color: #ffefe6;
