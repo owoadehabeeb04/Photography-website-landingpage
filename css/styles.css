@@ -1931,6 +1931,7 @@ height: 76.76px;
 }
 .imgbookus2 {
   padding-left: 0rem;
+  
   padding-right: 0rem;
 }
       }
@@ -2170,3 +2171,39 @@ margin-top: 0.34rem;
   .failure {
     display: none;
   }
+
+
+
+    /* to up */
+    .toUp {
+      position: fixed;
+      bottom: 0;
+      right: 3%;
+      opacity: 1; 
+      z-index: 1000;     
+      background: linear-gradient(
+        270.04deg,
+        rgba(108, 87, 219, 0.87) 0.05%,
+        rgba(12, 25, 31, 0.79) 97.84%
+      );
+      box-shadow: 2px  black;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .toUp:active {
+opacity: 1;
+    }
+    .svgbutton {
+      width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    z-index: 1000;
+    }
+    .svgbutton:active {
+      opacity: 1;
+
+    }
+
+
+
+
