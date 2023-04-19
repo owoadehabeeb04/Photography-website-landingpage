@@ -2189,20 +2189,17 @@ margin-top: 0.34rem;
       box-shadow: 2px  black;
       border-radius: 50%;
       cursor: pointer;
+      display: none;
     }
-    .toUp:active {
-opacity: 1;
-    }
+  
     .svgbutton {
       width: 3rem;
     height: 3rem;
     opacity: 1;
     z-index: 1000;
+    
     }
-    .svgbutton:active {
-      opacity: 1;
-
-    }
+    
 
 
 

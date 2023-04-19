@@ -41,5 +41,18 @@ const clikckk = button.addEventListener("click", function validate() {
     });
   }
 });
-console.log(validateEmail(mail));
-// )
+// console.log(validateEmail(mail));
+
+
+// the toup button
+
+const ToUP = document.querySelector('.toUp');
+console.log(ToUP);
+window.addEventListener("scroll", () => {
+if(window.pageYOffset >= 150) {
+  ToUP.style.display = 'inline-flex';
+}
+else {
+  ToUP.style.display = 'none';
+}
+})
